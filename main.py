@@ -28,11 +28,16 @@ logits_per_image = outputs.logits_per_image
 probs = torch.sigmoid(logits_per_image) # 시그모이드 활성화 함수를 적용한 확률입니다
 print(f"{probs[0][0]:.1%} that image 0 is '{candidate_labels[0]}'")
 
-## check lable 
+## check
 print(candidate_labels)
 print(texts)
-print(outputs.logits_per_image)
+print("logits_per_image", outputs.logits_per_image)
 print(torch.sigmoid(outputs.logits_per_image))
+
+print("logits_per_text", outputs.logits_per_text)
+print(torch.sigmoid(outputs.logits_per_text))
+
+
 
 ## print best_idx candidate and best_idx prob
 probs = torch.sigmoid(outputs.logits_per_image)[0]
