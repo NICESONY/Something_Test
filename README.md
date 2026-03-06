@@ -67,6 +67,7 @@ git remote -v
 새로 연결:
 
 ```bash
+git init
 git remote add origin https://github.com/NICESONY/Something_Test.git
 ```
 
