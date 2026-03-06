@@ -1,5 +1,6 @@
 from PIL import Image
 import requests
+
 from transformers import AutoProcessor, AutoModel
 from transformers import SiglipModel, SiglipProcessor
 
